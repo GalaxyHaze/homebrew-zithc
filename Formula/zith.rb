@@ -22,13 +22,13 @@ class Zith < Formula
   end
 
   def install
-    resource("cli11").stage(buildpath/"deps")
-    resource("tomlplusplus").stage(buildpath/"deps")
+    resource("cli11").stage(buildpath/"deps/cli11")
+    resource("tomlplusplus").stage(buildpath/"deps/tomlplusplus")
 
     system "cmake", "-S", "scripts", "-B", "build",
            *std_cmake_args,
-           "-DFETCHCONTENT_SOURCE_DIR_CLI11=#{buildpath}/deps/CLI11-2.4.1",
-           "-DFETCHCONTENT_SOURCE_DIR_TOMLPLUSPLUS=#{buildpath}/deps/tomlplusplus-3.4.0"
+           "-DFETCHCONTENT_SOURCE_DIR_CLI11=#{buildpath}/deps/cli11",
+           "-DFETCHCONTENT_SOURCE_DIR_TOMLPLUSPLUS=#{buildpath}/deps/tomlplusplus"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
