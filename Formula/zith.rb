@@ -34,6 +34,6 @@ class Zith < Formula
   end
 
   test do
-    system "#{bin}/zith", "--version"
+    system "#{bin}/zith", "version"
   end
 end
