@@ -1,4 +1,4 @@
-class Zith < Formula
+class Zithc < Formula
   desc "Zith is a low level & high level language designed to be powerfull & pleasant to write."
   homepage "https://galaxyhaze.github.io/Zith"
   url "https://github.com/GalaxyHaze/Zith/archive/e92ee52b833995686c67775b40c8908618476b95.tar.gz"
@@ -34,6 +34,6 @@ class Zith < Formula
   end
 
   test do
-    system "#{bin}/zith", "version"
+    system "#{bin}/zithc", "version"
   end
 end
