@@ -19,7 +19,7 @@ class Zithc < Formula
   end
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", "-DZITH_VERSION=#{version}", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
