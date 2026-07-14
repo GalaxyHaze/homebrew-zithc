@@ -1,21 +1,21 @@
 class Zithc < Formula
   desc "Zith is a low level & high level language designed to be powerfull & pleasant to write."
   homepage "https://galaxyhaze.github.io/Zith"
-  url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.3.tar.gz"
-  version "0.1.3"
-  sha256 "36386699f876a017552a84479f27d7564efbbe8295b9efbc5b9eda0085d67fe7"
+  url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.4.tar.gz"
+  version "0.1.4"
+  sha256 "9063d0749cb3ed9eb6d801a87daf5dda8102ccb3e1f87a200e4d429eb65c156a"
   license "MIT"
 
   depends_on "cmake" => :build
 
   resource "mio" do
-    url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.3.tar.gz"
-    sha256 "36386699f876a017552a84479f27d7564efbbe8295b9efbc5b9eda0085d67fe7"
+    url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.4.tar.gz"
+    sha256 "9063d0749cb3ed9eb6d801a87daf5dda8102ccb3e1f87a200e4d429eb65c156a"
   end
 
   resource "tomlplusplus" do
-    url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.3.tar.gz"
-    sha256 "36386699f876a017552a84479f27d7564efbbe8295b9efbc5b9eda0085d67fe7"
+    url "https://github.com/GalaxyHaze/Zith-Lang/archive/refs/tags/v0.1.4.tar.gz"
+    sha256 "9063d0749cb3ed9eb6d801a87daf5dda8102ccb3e1f87a200e4d429eb65c156a"
   end
 
   def install
